@@ -28,6 +28,7 @@ $(function () {
     $('#file').on('change', function (e) { //文件发生变化就会触发change事件
         // console.log(e);
         // 获取用户选择的文件
+        // console.log(this.files===e.target.files);
         var filelist = e.target.files
         if (filelist.length === 0) {
             return layer.msg('请选择图片')
