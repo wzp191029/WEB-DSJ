@@ -3,6 +3,7 @@ $.ajaxPrefilter(function (options) {
     options.url = 'http://ajax.frontend.itheima.net' + options.url
 
 
+
     // 统一为有权限的接口设置headers请求头
     // 如果options.url中不包含有 /my  indexOf的值为-1 不等于-1 就是包含
     if (options.url.indexOf('/my') !== -1) {
